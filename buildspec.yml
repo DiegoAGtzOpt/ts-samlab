@@ -1,4 +1,7 @@
 version: 0.2
+env:
+  variables:
+    DATABASE_URL: ""
 phases:
   build:
     commands:
