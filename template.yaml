@@ -10,14 +10,6 @@ Globals:
   Function:
     Timeout: 3
 
-CodeBuildProject:
-  Type: AWS::CodeBuild::Project
-  Properties:
-    Environment:
-      ComputeType: BUILD_GENERAL1_SMALL
-      Image: public.ecr.aws/sam/build-nodejs20.x
-      Type: LINUX_CONTAINER
-
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
